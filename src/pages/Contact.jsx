@@ -3,7 +3,7 @@ import Layout from "../Components/Layout"; // adjust if needed
 
 export default function Contact() {
   return (
-    <Layout>
+    
       <section className="pt-24 pb-16 bg-gray-50 px-4">
         <h2 className="text-2xl font-bold text-purple-800 mb-6 text-center">Contact Us</h2>
         <form className="flex flex-col space-y-4 max-w-md mx-auto">
@@ -30,6 +30,6 @@ export default function Contact() {
           </button>
         </form>
       </section>
-    </Layout>
+    
   );
 }
