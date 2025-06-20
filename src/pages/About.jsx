@@ -3,7 +3,7 @@ import Layout from "../Components/Layout"; // adjust path if needed
 
 export default function About() {
   return (
-    <Layout>
+    
       <section className="p-4 pt-20 bg-gray-50">
         <h2 className="text-2xl font-bold mb-4 text-purple-800">About Us</h2>
         <p className="text-gray-700 leading-relaxed space-y-4">
@@ -26,6 +26,6 @@ export default function About() {
           <span>Thank you for choosing Bajiya Medical — your health, our priority.</span>
         </p>
       </section>
-    </Layout>
+    
   );
 }
