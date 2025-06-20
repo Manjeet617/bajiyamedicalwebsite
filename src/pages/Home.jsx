@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import ProductCard from '../components/ProductCard';
+import ProductCard from '../Components/ProductCard';
 import { CartContext } from '../context/CartContext';
 
 const testimonials = [
-  { name: 'Ankit', feedback: 'Fast delivery and genuine medicines. Very satisfied!' },
-  { name: 'Yatesh Choudhary', feedback: 'Affordable and easy to order. Highly recommended!' },
+  { name: 'Madan Singh', feedback: 'Fast delivery and genuine medicines. Very satisfied!' },
+  { name: 'Sonu Choudhary', feedback: 'Affordable and easy to order. Highly recommended!' },
   { name: 'Ajay Singh', feedback: 'Customer service is excellent. Will buy again!' }
 ];
 
