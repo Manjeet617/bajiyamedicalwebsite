@@ -20,7 +20,7 @@ export default function About() {
           </span>
           <br />
           <span>
-            This platform is proudly founded and managed by <strong>Manjeet Bajiya</strong>.
+            This platform is proudly founded and managed by <strong>Mr.Manjeet Bajiya</strong>.
           </span>
           <br />
           <span>Thank you for choosing Bajiya Medical — your health, our priority.</span>
