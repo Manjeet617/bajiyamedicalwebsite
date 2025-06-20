@@ -11,25 +11,29 @@ export default function Navbar() {
 
   return (
     <nav className="bg-purple-800 text-white fixed top-0 left-0 w-full z-50 shadow-md">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Brand + Toggle */}
-        <Link to="/" className="text-xl font-bold">BajiyaMedical</Link>
+        <Link to="/" className="text-xl font-bold">
+          BajiyaMedical
+        </Link>
 
         <button
-          className="md:hidden text-white text-2xl focus:outline-none"
+          className="md:hidden text-white text-2xl focus:outline-none transition"
           onClick={handleToggle}
           aria-expanded={menuOpen}
           aria-label="Toggle navigation"
         >
-          {menuOpen ? '✖' : '☰'}
+          <span>{menuOpen ? '✖' : '☰'}</span>
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 text-sm font-medium">
           <Link to="/" className="hover:underline">Home</Link>
           <Link to="/about" className="hover:underline">About</Link>
           <Link to="/contact" className="hover:underline">Contact</Link>
-          <Link to="/cart" className="hover:underline">Cart ({cart.length})</Link>
+          <Link to="/cart" className="hover:underline">
+            Cart <span className="ml-1">({cart.length})</span>
+          </Link>
           <Link to="/login" className="hover:underline">Login</Link>
           <Link to="/signup" className="hover:underline">Signup</Link>
         </div>
@@ -38,7 +42,7 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
         <div className="md:hidden bg-purple-700 px-4 pb-4">
-          <ul className="flex flex-col space-y-3 text-center">
+          <ul className="flex flex-col space-y-3 text-center text-sm font-medium">
             <li><Link to="/" onClick={closeMenu} className="block hover:underline">Home</Link></li>
             <li><Link to="/about" onClick={closeMenu} className="block hover:underline">About</Link></li>
             <li><Link to="/contact" onClick={closeMenu} className="block hover:underline">Contact</Link></li>
